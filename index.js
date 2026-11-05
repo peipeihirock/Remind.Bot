@@ -3,7 +3,7 @@ const { Client, GatewayIntentBits, SlashCommandBuilder, REST, Routes } = require
 const http = require('http'); // HTTPサーバー用
 
 // --- Renderのスリープ対策（簡易Webサーバー） ---
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
   res.end('Discord Bot is running!');
